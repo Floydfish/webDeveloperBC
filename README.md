@@ -1,6 +1,7 @@
 # The Web Developer Bootcamp
 
 Course to learn web development, including several technologies, such as:
+    
     * HTML5
     * CSS3
     * JavaScript
