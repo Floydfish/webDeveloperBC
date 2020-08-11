@@ -3,15 +3,15 @@ body {
 }
 
 h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Lobster', cursive;
   font-size: 5.0em;
   text-decoration: underline;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Baloo Tamma 2', cursive;
   font-size: 2em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 2;
   text-align: justify;
 }
