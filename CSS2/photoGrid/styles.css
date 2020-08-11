@@ -1,3 +1,16 @@
+h1 {
+  font-family: 'Josefin Slab', serif;
+  margin-left: 1.66%;
+  border-bottom: 0.125em solid rgba(128, 128, 128, 0.125);
+  padding-bottom: 0.5em;
+  width: 30%;
+}
+
+h1 span {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
 img {
   width: 30%;
   margin: 1.66%;
