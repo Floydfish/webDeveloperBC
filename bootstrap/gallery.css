@@ -52,5 +52,5 @@ body {
 .grid-item--height4 { height: 360px; }
 
 img {
-  object-fit: contain;
+  background-size: cover;
 }
