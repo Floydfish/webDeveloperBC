@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Basics</title>
-  <link rel="stylesheet" href="bootstrap.css">
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="bootstrap.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
 
 </head>
@@ -28,6 +28,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quisquam voluptatem eius. Eaque saepe autem quam. Atque beatae ratione accusamus aut, dolor vel eaque, nostrum incidunt voluptatum iure quas officia.<span>Nihil beatae ratione voluptates mollitia iure, id saepe libero odio explicabo delectus, nostrum provident, eos nobis soluta! Accusamus totam iure illum, nulla reprehenderit unde eveniet accusantium cupiditate fugiat at maxime.</span></p>
       <button class="btn-success btn">I'm a button</button>
     </div>
+
     <form>
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
@@ -43,6 +44,29 @@
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Inline Form -->
+    <form class="form-inline">
+      <label class="sr-only" for="inlineFormInputName2">Name</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+    
+      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+      </div>
+    
+      <div class="form-check mb-2 mr-sm-2">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+        <label class="form-check-label" for="inlineFormCheck">
+          Remember me
+        </label>
+      </div>
+    
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
     </form>
   </div>
 </body>
