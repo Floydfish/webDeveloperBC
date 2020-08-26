@@ -1,4 +1,4 @@
-const age;
+const age = prompt("What's your age?");
 
 if (age < 0) {
   console.log("Age cannot be negative");
