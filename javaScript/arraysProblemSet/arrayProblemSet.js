@@ -4,6 +4,8 @@ const array1 = ["a", "b", "c"];
 
 const array2 = [1, 1, 1 , 1];
 
+const array5 = [1, 1, 1 , 1, 5];
+
 const array3 = [-5, 4, 100];
 
 const array4 = [-5, 4, 100, 6];
@@ -22,12 +24,13 @@ function printReverse1(arr) {
 }
 
 function isUniform(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === arr[i+1]) {
-      return true;
+  const first = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] !== first) {
+      return false;
     }
-    return false;
   }
+  return true;
 }
 
 const sumArray = (array) => {
@@ -40,7 +43,7 @@ const sumArray = (array) => {
 
 function max(array) {
   let num = array[0];
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 1; i < array.length; i++) {
     if (num < array[i]) {
       num = array[i] 
     }
