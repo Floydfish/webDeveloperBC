@@ -1,9 +1,19 @@
-const firstLI = document.querySelector("li");
+const lis = document.querySelectorAll("li");
 
-firstLI.addEventListener("mouseover", () => {
-  firstLI.style.color = "green";
+lis.forEach(item => {
+  item.addEventListener("mouseover", () => {
+    item.style.color = "green";
+  })
 })
 
-firstLI.addEventListener("mouseout", () => {
-  firstLI.style.color = "red";
+lis.forEach(item => {
+  item.addEventListener("mouseout", () => {
+    item.style.color = "black";
+  })
+})
+
+lis.forEach(item => {
+  item.addEventListener("click", () => {
+    item.style.toggle = "done";
+  })
 })
