@@ -14,6 +14,6 @@ lis.forEach(item => {
 
 lis.forEach(item => {
   item.addEventListener("click", () => {
-    item.style.toggle = "done";
+    item.classList.toggle("done");
   })
 })
