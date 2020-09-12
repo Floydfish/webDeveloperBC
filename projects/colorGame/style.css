@@ -1,5 +1,7 @@
 body {
   background-color: #232323;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .square {
@@ -16,12 +18,12 @@ body {
 }
 
 h1 {
+  text-align: center;
   color: white;
+  background-color: steelblue;
+  margin: 0;
+  font-weight: normal;
 }
-
-/* span {
-  color: white;
-} */
 
 #stripe {
   background-color: white;
