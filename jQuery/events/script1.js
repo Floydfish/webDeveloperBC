@@ -8,5 +8,15 @@ $("button").click(function() {
 
 $("button").click(function() {
   const text = $(this).text();
-  console.log("You clicked " + text);
+  console.log(`You clicked ${text}`);
+})
+
+// $("input[type='text']").keypress(function() {
+//   console.log("YOU PRESSED A KEY!")
+// })
+
+$("input[type='text']").keypress(function(event){
+  if (event.which === 13) {
+    alert("You HIT ENTER")
+  }
 })
