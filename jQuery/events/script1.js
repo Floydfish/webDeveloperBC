@@ -1,6 +1,6 @@
-$("h1").click(() => {
-  alert("h1 clicked!")
-})
+// $("h1").click(() => {
+//   alert("h1 clicked!")
+// })
 
 $("button").click(function() {
   $(this).css("background", "pink")
@@ -19,4 +19,20 @@ $("input[type='text']").keypress(function(event){
   if (event.which === 13) {
     alert("You HIT ENTER")
   }
+})
+
+$("h1").on("click", function() {
+  $(this).css("color", "purple");
+});
+
+// $("input").on("keypress", function(){
+//   console.log("KeyPressed!")
+// })
+
+$("button").on("mouseenter", function(){
+  $(this).css("font-weight", "700");
+})
+
+$("button").on("mouseleave", function(){
+  $(this).css("font-weight", "400");
 })
