@@ -11,7 +11,7 @@ $("ul").on("click", "span", function(e){
   e.stopPropagation();
 });
 
-//adding items
+//Adding items on enter
 $("input[type='text']").keypress(function(e) {
   if (e.which === 13) {
     //grabbing new todo text
