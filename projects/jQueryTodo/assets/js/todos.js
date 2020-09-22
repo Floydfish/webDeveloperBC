@@ -19,5 +19,9 @@ $("input[type='text']").keypress(function(e) {
     //clearing the input
     $(this).val("");
     //create a new li and add to ul
-    $("ul").append(`<li> <span>X</span> ${todoText}</li>`)
-}})
+    $("ul").append(`<li> <span><i class='fas fa-cut'></i></span> ${todoText}</li>`)
+}});
+
+$(".fa-pencil-alt").click(function(){
+  $("input[type='text']").fadeToggle();
+});
