@@ -35,6 +35,16 @@
 var circles = [];
 
 function onKeyDown(event) {
+  // if key is "a"
+  if (event.key === "a") {
+    //play sound1
+    sound1.play();
+  }
+  // if key is "s"
+    if (event.key === "b") {
+      //play sound2  
+      sound2.play();
+    }
   var maxPoint = new Point(view.size.width, view.size.height);
   var randomPoint = Point.random();
   var point = maxPoint * randomPoint;
@@ -51,3 +61,12 @@ function onFrame(event) {
     circles[i].scale(.9);
   }
 }
+
+//Adding sounds
+var sound1 = new Howl({
+  src: ['./sounds/bubbles.mp3']
+});
+
+var sound2 = new Howl({
+  src: ['./sounds/clay.mp3']
+});
