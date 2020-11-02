@@ -1,0 +1,92 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #2980B9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  background-color: #2980b9;
+  color: white;
+  margin: 0;
+  padding: 0.5rem 1.25rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  color: #666;
+  padding-left: 1.25rem;
+}
+
+li:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+
+li:hover span {
+  width: 2.5rem;
+  opacity: 1;
+}
+
+span {
+  background-color: #e74c3c;
+  height: 2.5rem;
+  /* margin-right: 1.25rem; */
+  text-align: center;
+  color: white;
+  width: 0;
+  transition: 0.2s linear;
+  opacity: 0;
+  float: right;
+}
+
+
+input {
+  font-size: 1.1rem;
+  color: #2980b9;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: .8rem .8rem .8rem 1.125rem;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+  background-color: white;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(202, 192, 192);
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.fa-pencil-alt {
+  float: right;
+}
+
+#container {
+  width: 70%;
+  margin: 10% auto;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+

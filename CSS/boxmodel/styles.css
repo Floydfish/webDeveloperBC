@@ -1,7 +1,0 @@
-p {
-  width: 50%; /* of the parent element */
-  border: 0.125em solid blue;
-  padding: 0.5em;
-  /* margin: 1em 2em 30em 5em; */
-  margin: 0 auto;
-}
