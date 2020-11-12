@@ -1,0 +1,22 @@
+h1  {
+  text-align: center;
+  width: 50%;
+  font-weight: 400;
+  text-decoration: underline;
+  letter-spacing: 15px;
+}
+
+p {
+  text-align: right;
+  font-weight: 800;
+  line-height: 2;
+}
+
+h2 {
+  text-decoration: #f78432 line-through wavy; 
+}
+
+a {
+  text-decoration: none;
+}
+
