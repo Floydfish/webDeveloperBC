@@ -9,3 +9,16 @@ button {
 h1, h2 {
     color: magenta;
 }
+
+button:hover {
+    background-color: tomato;
+    color: #f1f1f1;
+}
+
+button:active {
+    background-color: green;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
