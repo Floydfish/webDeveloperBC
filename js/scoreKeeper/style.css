@@ -21,3 +21,11 @@ button {
 #btnR {
     background-color: crimson;
 }
+
+.winner {
+    color: green;
+}
+
+.loser {
+    color: red;
+}
