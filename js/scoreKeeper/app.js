@@ -1,37 +1,39 @@
-const p1Score = document.querySelector("#p1Score");
-const p2Score = document.querySelector("#p2Score");
-const btnP1 = document.querySelector("#btnP1");
-const btnP2 = document.querySelector("#btnP2");
+const p1 = {
+    score: 0,
+    button: document.querySelector("#btnP1"),
+    display: document.querySelector("#p1Score")
+}
+
+const p2 = {
+    score: 0,
+    button: document.querySelector("#btnP2"),
+    display: document.querySelector("#p2Score")
+}
+
 const btnR = document.querySelector("#btnR");
 const playTo = document.querySelector("#playTo");
 
-let currP1Score = 0;
-let currP2Score = 0;
 let winningScore = 3;
 let isGameOver = false;
 
-btnP1.addEventListener('click', function (e) {
+function updateScore(player, opponent) {
     if (!isGameOver) {
-        currP1Score++
-        if (currP1Score === winningScore) {
+        player.score++;
+        if (player.score === winningScore) {
             isGameOver = true;
-            p1Score.classList.add("winner");
-            p2Score.classList.add("loser");
+            player.display.classList.add("winner")
+            opponent.display.classList.add("loser")
         }
-        p1Score.innerText = currP1Score;
+        player.display.innerText = player.score
     }
+}
+
+p1.button.addEventListener('click', function (e) {
+    updateScore(p1, p2)
 });
 
-btnP2.addEventListener('click', function (e) {
-    if (!isGameOver) {
-        currP2Score++
-        if (currP2Score === winningScore) {
-            isGameOver = true;
-            p2Score.classList.add("winner");
-            p1Score.classList.add("loser");
-        }
-        p2Score.innerText = currP2Score;
-    }
+p2.button.addEventListener('click', function (e) {
+    updateScore(p2, p1)
 });
 
 
@@ -44,9 +46,10 @@ playTo.addEventListener('change', function() {
 
 function reset() {
     isGameOver = false;
-    currP1Score = currP2Score = 0;
-    p1Score.innerText = p2Score.innerText = currP1Score;
-    p1Score.classList.remove("winner", "loser")
-    p2Score.classList.remove("winner", "loser")
+    for (let p of [p1, p2]) {
+        p.score = 0;
+        p.display.innerText = 0;
+        p.display.classList.remove("winner", "loser");
+    }
 }
 
