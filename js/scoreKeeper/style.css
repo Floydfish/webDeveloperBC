@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
+button {
+    width: 20%;
+}
+
+#btnP1 {
+    background-color: aquamarine;
+}
+
+#btnP2 {
+    background-color:rgb(93, 134, 196);
+}
+
+#btnR {
+    background-color: crimson;
+}
